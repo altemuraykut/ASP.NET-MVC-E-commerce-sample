@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78b9920b9a7744f897645fd445e52cc2" Name="Diagram1">
+        <EntityTypeShape EntityType="PAUCENGModel.Comments" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAUCENGModel.MessageReplies" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAUCENGModel.OrderDetails" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAUCENGModel.Categories" Width="1.5" PointX="0.75" PointY="16.375" />
+        <AssociationConnector Association="PAUCENGModel.FK_Categories_Categories" />
+        <EntityTypeShape EntityType="PAUCENGModel.Addresses" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="PAUCENGModel.Orders" Width="1.5" PointX="3" PointY="12.625" />
+        <AssociationConnector Association="PAUCENGModel.FK_OrderDetails_Orders" />
+        <EntityTypeShape EntityType="PAUCENGModel.Messages" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="PAUCENGModel.FK_MessageReplies_Messages" />
+        <EntityTypeShape EntityType="PAUCENGModel.Products" Width="1.5" PointX="3" PointY="16.75" />
+        <AssociationConnector Association="PAUCENGModel.FK_Products_Categories" />
+        <AssociationConnector Association="PAUCENGModel.FK_Comments_Products" />
+        <AssociationConnector Association="PAUCENGModel.FK_OrderDetails_Products" />
+        <EntityTypeShape EntityType="PAUCENGModel.Members" Width="1.5" PointX="0.75" PointY="6.125" />
+        <AssociationConnector Association="PAUCENGModel.FK_Addresses_Members" />
+        <AssociationConnector Association="PAUCENGModel.FK_Comments_Members" />
+        <AssociationConnector Association="PAUCENGModel.FK_MessageReplies_Members" />
+        <AssociationConnector Association="PAUCENGModel.FK_Messages_Members" />
+        <AssociationConnector Association="PAUCENGModel.FK_Orders_Members" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
